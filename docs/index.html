@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADH Open Wellenreiten – Hochschulwertung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #86a9c7;
+      --surface: rgba(255,255,255,0.1);
+      --blue:    #f9efcc;
+      --blue-dk: #f9efcc;
+      --text:    #f9efcc;
+      --muted:   rgba(255,255,255,0.55);
+      --gold:    #F5D87A;
+      --silver:  rgba(255,255,255,0.7);
+      --bronze:  #D4A96A;
+      --border:  rgba(255,255,255,0.18);
+      --mono:    'Space Mono', monospace;
+      --display: 'Playfair Display', serif;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--mono);
+      min-height: 100vh;
+    }
+
+    /* ── header ── */
+    header {
+      padding: 1.5rem 2.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .title-block { flex-shrink: 0; }
+
+    #trophy-wrap {
+      flex: 1;
+      min-width: 0;
+    }
+
+    #trophy-wrap svg {
+      width: 100%;
+      height: 208px;
+      display: block;
+    }
+
+    .adh-logo {
+      height: clamp(70px, 10vw, 110px);
+      width: auto;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .title-block h1 {
+      font-family: var(--display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .title-block .event-name {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--blue);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-top: 0.5rem;
+    }
+
+    .meta {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      line-height: 2;
+      margin-top: 0.75rem;
+    }
+
+    .pulse-dot {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--blue);
+      margin-right: 5px;
+      animation: pulse 2s ease-in-out infinite;
+      vertical-align: middle;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1;   transform: scale(1);   }
+      50%       { opacity: 0.3; transform: scale(0.65); }
+    }
+
+    /* ── main layout ── */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 5rem;
+    }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 1.2rem;
+      margin-top: 3rem;
+    }
+
+    /* ── leaderboard table ── */
+    .lb-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .lb-table thead tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .lb-table th {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      font-weight: 400;
+    }
+
+    .lb-table th.num { text-align: right; }
+
+    .lb-table tbody tr {
+      border-bottom: 1px solid rgba(123,157,181,0.1);
+      transition: background 0.15s;
+    }
+
+    .lb-table tbody tr:hover { background: rgba(123,157,181,0.06); }
+
+    .lb-table td {
+      padding: 0.9rem 0.75rem;
+      vertical-align: middle;
+    }
+
+    /* rank cell */
+    .rank-cell { width: 3rem; text-align: center; }
+
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem; height: 2rem;
+      border-radius: 50%;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .rank-1 { background: rgba(245,216,122,0.2);  color: var(--gold);   border: 1px solid rgba(245,216,122,0.4); }
+    .rank-2 { background: rgba(255,255,255,0.15); color: var(--silver); border: 1px solid rgba(255,255,255,0.3); }
+    .rank-3 { background: rgba(212,169,106,0.2);  color: var(--bronze); border: 1px solid rgba(212,169,106,0.35); }
+    .rank-n { background: rgba(255,255,255,0.07); color: var(--muted);  border: 1px solid var(--border); }
+
+    .uni-name {
+      font-family: var(--mono);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* explanation box */
+    .explanation {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.8;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* clickable rows */
+    .lb-table tbody tr.uni-row {
+      cursor: pointer;
+    }
+
+    .lb-table tbody tr.uni-row:hover .uni-name {
+      color: var(--blue);
+    }
+
+    .chevron {
+      display: inline-block;
+      font-size: 0.6rem;
+      color: var(--muted);
+      margin-left: 0.5rem;
+      transition: transform 0.2s;
+      vertical-align: middle;
+    }
+
+    .uni-row.open .chevron { transform: rotate(180deg); }
+
+    /* expanded heat rows */
+    tr.expand-row td {
+      padding: 0 0 1rem 0;
+    }
+
+    tr.expand-row .expand-inner {
+      padding: 1rem;
+      background: rgba(123,157,181,0.05);
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    /* score bar */
+    .score-cell { width: 220px; }
+
+    .score-bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .score-bar-bg {
+      flex: 1;
+      height: 3px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .score-bar-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: var(--blue);
+      transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .score-val {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--blue);
+      min-width: 3.5rem;
+      text-align: right;
+    }
+
+    .num-cell {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: right;
+    }
+
+    /* ── heat cards ── */
+    .heats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .heat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1rem 1.1rem;
+      transition: border-color 0.2s;
+    }
+
+    .heat-card:hover { border-color: rgba(123,157,181,0.4); }
+
+    .heat-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .heat-card-title {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.05em;
+    }
+
+    .heat-card-div {
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      color: var(--blue);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .heat-surfer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.32rem 0;
+      border-bottom: 1px solid rgba(123,157,181,0.08);
+      font-size: 0.78rem;
+    }
+
+    .heat-surfer:last-child { border-bottom: none; }
+
+    .surfer-name      { color: var(--text); font-family: var(--mono); font-size: 0.78rem; }
+    .surfer-name-bold { font-weight: 700; color: var(--blue-dk); }
+    .surfer-uni       { font-family: var(--mono); font-size: 0.62rem; color: var(--muted); margin-top: 1px; }
+
+    .heat-surfer-highlight { background: rgba(255,255,255,0.1); border-radius: 3px; padding-left: 0.3rem; margin: 0 -0.3rem; }
+
+    .surfer-waves      { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; }
+    .surfer-wave       { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); }
+    .surfer-wave-best  { font-size: 0.85rem; color: var(--blue); font-weight: 700; }
+
+    /* ── states ── */
+    .state-msg {
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      color: var(--muted);
+      padding: 3rem 0;
+      letter-spacing: 0.05em;
+    }
+
+    .error-msg { color: #b85050; }
+
+    /* ── prevent table overflow on narrow screens ── */
+    .lb-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+    /* ── uni name: don't break awkwardly ── */
+    .uni-name { word-break: break-word; }
+
+    /* ── mobile ── */
+    @media (max-width: 640px) {
+      header { padding: 1.2rem 1.2rem 1rem; gap: 1rem; }
+      .title-block h1 { font-size: 1.8rem; line-height: 1.05; }
+      .meta { font-size: 0.6rem; margin-top: 0.3rem; }
+      .adh-logo { height: 60px; }
+      #trophy-wrap { display: none; }
+
+      main { padding: 1rem 1rem 3rem; }
+
+      /* hide score bar and heats count — keep rank, name, best wave */
+      .score-cell, .col-heats { display: none; }
+
+      /* larger touch target */
+      .lb-table td { padding: 0.75rem 0.5rem; }
+
+      .lb-table th { padding: 0.4rem 0.5rem; }
+
+      /* expand inner: single column cards */
+      .expand-inner .heats-grid {
+        grid-template-columns: 1fr;
+      }
+
+.explanation { font-size: 0.68rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="title-block">
+    <h1>AdH Open 26<br>Uni-Ranking</h1>
+    <div class="meta">
+      <div><span class="pulse-dot"></span>Live — aktualisiert alle 5 Min</div>
+      <div id="updated-at">—</div>
+    </div>
+  </div>
+  <div id="trophy-wrap">
+    <svg id="trophy-svg" width="100%" viewBox="0 0 680 300" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>AdH Open 26 Uni-Ranking live trophy graphic</title>
+      <rect x="0" y="0" width="680" height="300" fill="#86a9c7"/>
+      <rect x="0" y="210" width="680" height="5"  fill="#6a8da5" opacity="0.5"/>
+      <rect x="0" y="228" width="680" height="4"  fill="#6a8da5" opacity="0.35"/>
+      <rect x="0" y="244" width="680" height="3"  fill="#6a8da5" opacity="0.25"/>
+      <rect x="0" y="256" width="680" height="44" fill="#5f8099" opacity="0.45"/>
+      <rect x="0" y="208" width="680" height="3"  fill="#f9efcc" opacity="0.25"/>
+      <!-- trophy base -->
+      <rect x="304" y="196" width="72" height="10" rx="3" fill="#c8a84b"/>
+      <rect x="326" y="172" width="28" height="28" rx="2" fill="#c8a84b"/>
+      <rect x="330" y="176" width="20" height="20" rx="1" fill="#e0bc60"/>
+      <!-- cup -->
+      <path d="M300 72 L310 167 L370 167 L380 72 Z" fill="#c8a84b"/>
+      <path d="M312 80 L318 160 L362 160 L368 80 Z" fill="#e0bc60"/>
+      <path d="M318 87 L322 147 L335 147 L330 87 Z" fill="#f0d080" opacity="0.5"/>
+      <!-- handles -->
+      <path d="M300 92 Q270 112 275 140 Q278 157 300 152" fill="none" stroke="#c8a84b" stroke-width="10" stroke-linecap="round"/>
+      <path d="M300 92 Q272 112 277 140 Q280 155 300 152" fill="none" stroke="#e0bc60" stroke-width="5" stroke-linecap="round"/>
+      <path d="M380 92 Q410 112 405 140 Q402 157 380 152" fill="none" stroke="#c8a84b" stroke-width="10" stroke-linecap="round"/>
+      <path d="M380 92 Q408 112 403 140 Q400 155 380 152" fill="none" stroke="#e0bc60" stroke-width="5" stroke-linecap="round"/>
+      <!-- rim -->
+      <rect x="294" y="67" width="92" height="14" rx="4" fill="#c8a84b"/>
+      <rect x="296" y="69" width="88" height="10" rx="3" fill="#e0bc60"/>
+      <!-- star -->
+      <text x="340" y="132" text-anchor="middle" font-size="28" fill="#c8a84b" font-family="serif">★</text>
+      <text x="340" y="132" text-anchor="middle" font-size="22" fill="#f5d060" font-family="serif">★</text>
+      <!-- podium blocks (gold center aligned with trophy at x=340) -->
+      <rect x="300" y="264" width="80" height="36" rx="2" fill="#e0bc60" opacity="0.9"/>
+      <rect x="240" y="272" width="60" height="28" rx="2" fill="#a8c0cc" opacity="0.85"/>
+      <rect x="380" y="278" width="60" height="22" rx="2" fill="#c87941" opacity="0.85"/>
+      <!-- podium numbers -->
+      <text x="340" y="288" text-anchor="middle" font-family="'Space Mono', monospace" font-size="14" font-weight="700" fill="#6a4a10">1</text>
+      <text x="270" y="292" text-anchor="middle" font-family="'Space Mono', monospace" font-size="14" font-weight="700" fill="#3a5a6a">2</text>
+      <text x="410" y="294" text-anchor="middle" font-family="'Space Mono', monospace" font-size="14" font-weight="700" fill="#6a3010">3</text>
+      <!-- poles -->
+      <line x1="148" y1="52" x2="148" y2="210" stroke="#4a6a7a" stroke-width="3"/>
+      <line x1="218" y1="68" x2="218" y2="210" stroke="#4a6a7a" stroke-width="3"/>
+      <line x1="462" y1="68" x2="462" y2="210" stroke="#4a6a7a" stroke-width="3"/>
+      <line x1="532" y1="52" x2="532" y2="210" stroke="#4a6a7a" stroke-width="3"/>
+      <!-- garland strings -->
+      <path d="M148 52 Q183 44 218 52" fill="none" stroke="#4a6a7a" stroke-width="1" opacity="0.6"/>
+      <path d="M218 52 Q280 34 340 40 Q400 34 462 52" fill="none" stroke="#4a6a7a" stroke-width="1" opacity="0.6"/>
+      <path d="M462 52 Q497 44 532 52" fill="none" stroke="#4a6a7a" stroke-width="1" opacity="0.6"/>
+      <g id="pennants"></g>
+    </svg>
+  </div>
+  <img src="adh-logo.png" alt="ADH Open Wellenreiten" class="adh-logo" />
+</header>
+
+<main>
+  <div class="section-label">Hochschulranking</div>
+  <div class="explanation">
+    <strong>Wertung:</strong> Pro Heat wird die beste Einzelwelle jedes Athleten / jeder Athletin gewertet.
+    Die Hochschulwertung ergibt sich aus dem Durchschnitt aller Bestwellen einer Hochschule über alle Heats aus den Longboard und Open Klassen.
+    Auf eine Hochschule klicken, um die zugehörigen Heats einzublenden.
+  </div>
+  <div id="lb-container"><div class="state-msg">Daten werden geladen…</div></div>
+
+</main>
+
+<script>
+  const DATA_URL = 'leaderboard.json';
+  const REFRESH_MS = 5 * 60 * 1000;
+
+  async function load() {
+    try {
+      const res = await fetch(DATA_URL + '?t=' + Date.now());
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      render(data);
+    } catch (err) {
+      document.getElementById('lb-container').innerHTML =
+        `<div class="state-msg error-msg">Daten konnten nicht geladen werden: ${err.message}</div>`;
+    }
+  }
+
+  // ── university abbreviations ─────────────────────────────────────────────
+  const UNI_SHORT = {
+    // 2026 unis — official abbreviations
+    'TU München':                              'TUM',
+    'UNI Kiel':                                'CAU',
+    'KIT Karlsruhe':                           'KIT',
+    'RWTH Aachen':                             'RWTH',
+    'UNI Freiburg':                            'ALU',
+    'DSHS Köln':                               'DSHS',
+    'UNI Stuttgart':                           'Stuttgart',
+    'UNI Hamburg':                             'UHH',
+    'UNI Potsdam':                             'UP',
+    'UNI Würzburg':                            'JMU',
+    'UNI Münster':                             'WWU',
+    'UNI Augsburg':                            'Uni A',
+    'UNI Regensburg':                          'UR',
+    'UNI Erlangen-Nürnberg':                   'FAU',
+    'UNI Hannover':                            'LUH',
+    'UNI Tübingen':                            'EKUT',
+    'HU Berlin':                               'HU Berlin',
+    'TU Berlin':                               'TU Berlin',
+    'UNI Göttingen':                           'GAU',
+    'UNI Marburg':                             'UMR',
+    'UNI Bochum':                              'RUB',
+    'UNI Rostock':                             'Rostock',
+    'UNI Bielefeld':                           'Bielefeld',
+    'UNI Konstanz':                            'UKN',
+    'UNI Düsseldorf':                          'HHU',
+    'RPTU Kaiserslautern-Landau':              'RPTU',
+    'Europa Universität Flensburg':            'EUF',
+    'HS Flensburg':                            'HSF',
+    'Uni Innsbruck':                           'UIBK',
+    'Uni Frankfurt':                           'GUF',
+    'Uni Wien':                                'UniWien',
+    'Uni Oldenburg':                           'UOL',
+    'Fern Uni Hagen':                          'FernUni',
+    'IU Internationale Hochschule':            'IU',
+    'TH Deggendorf':                           'THD',
+    'TH Köln':                                 'TH Köln',
+    'FH Weihenstephen':                        'HSWT',
+    'HS RheinMain':                            'HSRM',
+    'HS Offenburg':                            'HSO',
+    'Medical School Hamburg':                  'MSH',
+    'Media University of applied Science':     'HdM',
+    // extras from 2025
+    'IST-Hochschule':                          'IST',
+    'DHGS Berlin':                             'DHGS',
+    'Jade-HS Oldenburg-Wilhelmshaven-Elsfleth':'Jade HS',
+    'ABK Stuttgart':                           'ABK',
+    'Lund University':                         'Lund',
+    'IADE - Universidade Europeia':            'IADE',
+    'FU Berlin':                               'FU Berlin',
+    'Wageningen University & Research':        'WUR',
+    'Universitat Politècnica de Catalunya':    'UPC',
+    'SRH Heidelberg':                          'SRH',
+    'FOM Augsburg':                            'FOM',
+    'UNI zu Köln':                             'UzK',
+    'LMU München':                             'LMU',
+    'HAW Hamburg':                             'HAW HH',
+    'TU Braunschweig':                         'TU BS',
+    'TU Dortmund':                             'TU DO',
+  };
+
+  function uniAbbr(name) {
+    return UNI_SHORT[name] || name.replace(/^(UNI|Uni|HS|TH|TU|FH|Hochschule)\s+/, '').substring(0, 9);
+  }
+
+  // ── trophy pennants ──────────────────────────────────────────────────────
+  const PENNANT_SLOTS = [
+    { pole: 148, tip: 'right', y1: 54,  y2: 78  },
+    { pole: 148, tip: 'right', y1: 100, y2: 124 },
+    { pole: 218, tip: 'right', y1: 70,  y2: 94  },
+    { pole: 462, tip: 'left',  y1: 70,  y2: 94  },
+    { pole: 532, tip: 'left',  y1: 54,  y2: 78  },
+  ];
+  const PENNANT_FILLS  = ['#f9efcc','#f0e4b8','#e8d89e','#f9efcc','#f0e4b8'];
+  const PENNANT_LENGTH = 56;
+  const SVG_NS         = 'http://www.w3.org/2000/svg';
+
+  function makePennant(slot, label, fill) {
+    const g   = document.createElementNS(SVG_NS, 'g');
+    const mid = (slot.y1 + slot.y2) / 2;
+    const poly = document.createElementNS(SVG_NS, 'polygon');
+    const points = slot.tip === 'right'
+      ? `${slot.pole},${slot.y1} ${slot.pole + PENNANT_LENGTH},${mid} ${slot.pole},${slot.y2}`
+      : `${slot.pole},${slot.y1} ${slot.pole - PENNANT_LENGTH},${mid} ${slot.pole},${slot.y2}`;
+    poly.setAttribute('points', points);
+    poly.setAttribute('fill', fill);
+    poly.setAttribute('opacity', '0.92');
+    g.appendChild(poly);
+
+    const txt = document.createElementNS(SVG_NS, 'text');
+    txt.setAttribute('x', slot.tip === 'right' ? slot.pole + 8 : slot.pole - 8);
+    txt.setAttribute('y', mid + 4);
+    txt.setAttribute('text-anchor', slot.tip === 'right' ? 'start' : 'end');
+    txt.setAttribute('font-family', "'Space Mono', monospace");
+    const fontSize = label.length <= 4 ? 11 : label.length <= 6 ? 10 : label.length <= 8 ? 9 : 7;
+    txt.setAttribute('font-size', String(fontSize));
+    txt.setAttribute('font-weight', '700');
+    txt.setAttribute('letter-spacing', label.length > 6 ? '0.01em' : '0.04em');
+    txt.setAttribute('fill', '#4a6070');
+    txt.textContent = label;
+    g.appendChild(txt);
+    return g;
+  }
+
+  function renderPennants(leaderboard) {
+    const container = document.getElementById('pennants');
+    if (!container) return;
+    container.innerHTML = '';
+    leaderboard.slice(0, 5).forEach((r, i) => {
+      container.appendChild(makePennant(PENNANT_SLOTS[i], uniAbbr(r.university), PENNANT_FILLS[i]));
+    });
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+
+  function render(data) {
+    document.getElementById('updated-at').textContent = 'Stand: ' + (data.updated_at || '—');
+    renderPennants(data.leaderboard || []);
+    renderLeaderboard(data.leaderboard || [], data.heats || []);
+  }
+
+  function heatCardHTML(h, highlightUni = null) {
+    return `
+      <div class="heat-card">
+        <div class="heat-card-header">
+          <span class="heat-card-title">${h.heat}</span>
+          <span class="heat-card-div">${h.division}</span>
+        </div>
+        ${h.surfers.map(s => {
+          const isHighlight = highlightUni && s.university === highlightUni;
+          const waves = s.top_waves || (s.best_wave != null ? [s.best_wave] : []);
+          const waveHTML = waves.length
+            ? waves.map((w, i) => `<div class="surfer-wave${i === 0 ? ' surfer-wave-best' : ''}">${w.toFixed(2)}</div>`).join('')
+            : '<div class="surfer-wave">—</div>';
+          return `
+          <div class="heat-surfer${isHighlight ? ' heat-surfer-highlight' : ''}">
+            <div>
+              <div class="surfer-name${isHighlight ? ' surfer-name-bold' : ''}">${s.athlete}</div>
+              <div class="surfer-uni">${s.university}</div>
+            </div>
+            <div class="surfer-waves">${waveHTML}</div>
+          </div>`;
+        }).join('')}
+      </div>`;
+  }
+
+  function renderLeaderboard(rows, allHeats) {
+    const el = document.getElementById('lb-container');
+    if (!rows.length) {
+      el.innerHTML = '<div class="state-msg">Noch keine abgeschlossenen Heats.</div>';
+      return;
+    }
+
+    // Build uni → relevant heats map (heats where that uni has at least one surfer with a score)
+    const uniHeats = {};
+    for (const h of allHeats) {
+      for (const s of h.surfers) {
+        if (s.best_wave != null) {
+          if (!uniHeats[s.university]) uniHeats[s.university] = [];
+          if (!uniHeats[s.university].includes(h)) uniHeats[s.university].push(h);
+        }
+      }
+    }
+
+    const maxScore = Math.max(...rows.map(r => r.mean_best_wave));
+
+    const table = document.createElement('table');
+    table.className = 'lb-table';
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th class="rank-cell">#</th>
+          <th>Hochschule</th>
+          <th class="score-cell">Ø Bestwelle</th>
+          <th class="num col-heats" style="text-align:right">Heats</th>
+          <th class="num" style="text-align:right">Bestwelle</th>
+        </tr>
+      </thead>`;
+
+    const tbody = document.createElement('tbody');
+
+    for (const r of rows) {
+      const pct = maxScore > 0 ? (r.mean_best_wave / maxScore * 100).toFixed(1) : 0;
+      const rankClass = r.rank <= 3 ? `rank-${r.rank}` : 'rank-n';
+      const heats = uniHeats[r.university] || [];
+
+      // main row
+      const tr = document.createElement('tr');
+      tr.className = 'uni-row';
+      tr.innerHTML = `
+        <td class="rank-cell"><span class="rank-badge ${rankClass}">${r.rank}</span></td>
+        <td><span class="uni-name">${r.university}</span><span class="chevron">▼</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-bg"><div class="score-bar-fill" style="width:${pct}%"></div></div>
+            <span class="score-val">${r.mean_best_wave.toFixed(2)}</span>
+          </div>
+        </td>
+        <td class="num-cell col-heats">${r.num_heats}</td>
+        <td class="num-cell">${r.max_best_wave.toFixed(2)}</td>`;
+
+      // expand row (hidden by default)
+      const expandTr = document.createElement('tr');
+      expandTr.className = 'expand-row';
+      expandTr.style.display = 'none';
+      const expandTd = document.createElement('td');
+      expandTd.colSpan = 5;
+      expandTd.innerHTML = `<div class="expand-inner"><div class="heats-grid">${heats.map(h => heatCardHTML(h, r.university)).join('')}</div></div>`;
+      expandTr.appendChild(expandTd);
+
+      tr.addEventListener('click', () => {
+        const open = tr.classList.toggle('open');
+        expandTr.style.display = open ? 'table-row' : 'none';
+      });
+
+      tbody.appendChild(tr);
+      tbody.appendChild(expandTr);
+    }
+
+    table.appendChild(tbody);
+    el.innerHTML = '';
+    const wrap = document.createElement('div');
+    wrap.className = 'lb-table-wrap';
+    wrap.appendChild(table);
+    el.appendChild(wrap);
+  }
+
+load();
+  setInterval(load, REFRESH_MS);
+</script>
+</body>
+</html>
