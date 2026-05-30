@@ -1,6 +1,6 @@
 {
   "event_name": "ADH-Open Wellenreiten 2026",
-  "updated_at": "2026-05-30 20:41 UTC",
+  "updated_at": "2026-05-30 21:32 UTC",
   "leaderboard": [],
   "heats": [
     {
@@ -746,21 +746,22 @@
     },
     {
       "division": "Open Men",
-      "heat": "Round 2 H2",
+      "heat": "Round 1 H23",
       "surfers": [
         {
-          "athlete": "Max R\u00f6mer",
-          "university": "UNI Kiel",
+          "athlete": "Leonard Wei\u00df",
+          "university": "UNI T\u00fcbingen",
           "best_wave": null,
           "top_waves": [],
           "place": 1
-        }
-      ]
-    },
-    {
-      "division": "Open Men",
-      "heat": "Round 2 H2",
-      "surfers": [
+        },
+        {
+          "athlete": "Christian Orlowski",
+          "university": "UNI D\u00fcsseldorf",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
         {
           "athlete": "David Rose",
           "university": "FH Weihenstephen",
@@ -775,21 +776,8 @@
       "heat": "Round 2 H2",
       "surfers": [
         {
-          "athlete": "Christian Orlowski",
-          "university": "UNI D\u00fcsseldorf",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        }
-      ]
-    },
-    {
-      "division": "Open Men",
-      "heat": "Round 2 H2",
-      "surfers": [
-        {
-          "athlete": "Leonard Wei\u00df",
-          "university": "UNI T\u00fcbingen",
+          "athlete": "Max R\u00f6mer",
+          "university": "UNI Kiel",
           "best_wave": null,
           "top_waves": [],
           "place": 1
