@@ -1,6 +1,6 @@
 {
   "event_name": "ADH-Open Wellenreiten 2026",
-  "updated_at": "2026-06-01 13:10 UTC",
+  "updated_at": "2026-06-01 19:01 UTC",
   "leaderboard": [
     {
       "rank": 1,
@@ -12,6 +12,14 @@
     },
     {
       "rank": 2,
+      "university": "Uni Wien",
+      "num_heats": 1,
+      "mean_best_wave": 4.93,
+      "max_best_wave": 4.93,
+      "min_best_wave": 4.93
+    },
+    {
+      "rank": 3,
       "university": "UNI Rostock",
       "num_heats": 3,
       "mean_best_wave": 4.7233,
@@ -19,7 +27,7 @@
       "min_best_wave": 2.97
     },
     {
-      "rank": 3,
+      "rank": 4,
       "university": "UNI Augsburg",
       "num_heats": 3,
       "mean_best_wave": 4.72,
@@ -27,7 +35,7 @@
       "min_best_wave": 3.33
     },
     {
-      "rank": 4,
+      "rank": 5,
       "university": "UNI Hannover",
       "num_heats": 3,
       "mean_best_wave": 4.69,
@@ -35,7 +43,7 @@
       "min_best_wave": 1.57
     },
     {
-      "rank": 5,
+      "rank": 6,
       "university": "Uni Oldenburg",
       "num_heats": 2,
       "mean_best_wave": 4.585,
@@ -43,7 +51,15 @@
       "min_best_wave": 3.17
     },
     {
-      "rank": 6,
+      "rank": 7,
+      "university": "FH Weihenstephen",
+      "num_heats": 1,
+      "mean_best_wave": 4.5,
+      "max_best_wave": 4.5,
+      "min_best_wave": 4.5
+    },
+    {
+      "rank": 8,
       "university": "Medical School Hamburg",
       "num_heats": 2,
       "mean_best_wave": 4.165,
@@ -51,28 +67,12 @@
       "min_best_wave": 3.83
     },
     {
-      "rank": 7,
-      "university": "Media University of applied Science",
-      "num_heats": 3,
-      "mean_best_wave": 3.8867,
-      "max_best_wave": 6.23,
-      "min_best_wave": 2.6
-    },
-    {
-      "rank": 8,
+      "rank": 9,
       "university": "UNI Erlangen-N\u00fcrnberg",
       "num_heats": 2,
       "mean_best_wave": 3.835,
       "max_best_wave": 5.17,
       "min_best_wave": 2.5
-    },
-    {
-      "rank": 9,
-      "university": "TH Deggendorf",
-      "num_heats": 2,
-      "mean_best_wave": 3.735,
-      "max_best_wave": 5.67,
-      "min_best_wave": 1.8
     },
     {
       "rank": 10,
@@ -84,14 +84,30 @@
     },
     {
       "rank": 11,
-      "university": "RWTH Aachen",
-      "num_heats": 2,
-      "mean_best_wave": 3.53,
-      "max_best_wave": 4.73,
-      "min_best_wave": 2.33
+      "university": "UNI D\u00fcsseldorf",
+      "num_heats": 1,
+      "mean_best_wave": 3.6,
+      "max_best_wave": 3.6,
+      "min_best_wave": 3.6
     },
     {
       "rank": 12,
+      "university": "Media University of applied Science",
+      "num_heats": 4,
+      "mean_best_wave": 3.5825,
+      "max_best_wave": 6.23,
+      "min_best_wave": 2.6
+    },
+    {
+      "rank": 13,
+      "university": "TH Deggendorf",
+      "num_heats": 3,
+      "mean_best_wave": 3.5467,
+      "max_best_wave": 5.67,
+      "min_best_wave": 1.8
+    },
+    {
+      "rank": 14,
       "university": "IU Internationale Hochschule",
       "num_heats": 1,
       "mean_best_wave": 3.5,
@@ -99,7 +115,7 @@
       "min_best_wave": 3.5
     },
     {
-      "rank": 13,
+      "rank": 15,
       "university": "TU Braunschweig",
       "num_heats": 1,
       "mean_best_wave": 3.4,
@@ -107,7 +123,15 @@
       "min_best_wave": 3.4
     },
     {
-      "rank": 14,
+      "rank": 16,
+      "university": "RWTH Aachen",
+      "num_heats": 4,
+      "mean_best_wave": 3.1725,
+      "max_best_wave": 4.73,
+      "min_best_wave": 2.13
+    },
+    {
+      "rank": 17,
       "university": "ABK Stuttgart",
       "num_heats": 1,
       "mean_best_wave": 3.17,
@@ -115,23 +139,39 @@
       "min_best_wave": 3.17
     },
     {
-      "rank": 15,
+      "rank": 18,
+      "university": "Uni Innsbruck",
+      "num_heats": 9,
+      "mean_best_wave": 3.1644,
+      "max_best_wave": 5.17,
+      "min_best_wave": 1.0
+    },
+    {
+      "rank": 19,
       "university": "UNI Kiel",
-      "num_heats": 18,
-      "mean_best_wave": 3.1139,
+      "num_heats": 24,
+      "mean_best_wave": 3.1617,
       "max_best_wave": 6.2,
       "min_best_wave": 0.5
     },
     {
-      "rank": 16,
+      "rank": 20,
       "university": "TU M\u00fcnchen",
-      "num_heats": 3,
-      "mean_best_wave": 3.0667,
+      "num_heats": 5,
+      "mean_best_wave": 2.952,
       "max_best_wave": 5.0,
       "min_best_wave": 0.7
     },
     {
-      "rank": 17,
+      "rank": 21,
+      "university": "Europa Universit\u00e4t Flensburg",
+      "num_heats": 2,
+      "mean_best_wave": 2.83,
+      "max_best_wave": 4.33,
+      "min_best_wave": 1.33
+    },
+    {
+      "rank": 22,
       "university": "UNI G\u00f6ttingen",
       "num_heats": 2,
       "mean_best_wave": 2.815,
@@ -139,23 +179,23 @@
       "min_best_wave": 1.5
     },
     {
-      "rank": 18,
-      "university": "Uni Innsbruck",
-      "num_heats": 6,
-      "mean_best_wave": 2.695,
-      "max_best_wave": 4.93,
-      "min_best_wave": 1.0
-    },
-    {
-      "rank": 19,
-      "university": "UNI Regensburg",
+      "rank": 23,
+      "university": "LMU M\u00fcnchen",
       "num_heats": 1,
-      "mean_best_wave": 2.6,
-      "max_best_wave": 2.6,
-      "min_best_wave": 2.6
+      "mean_best_wave": 2.5,
+      "max_best_wave": 2.5,
+      "min_best_wave": 2.5
     },
     {
-      "rank": 20,
+      "rank": 24,
+      "university": "UNI T\u00fcbingen",
+      "num_heats": 1,
+      "mean_best_wave": 2.4,
+      "max_best_wave": 2.4,
+      "min_best_wave": 2.4
+    },
+    {
+      "rank": 25,
       "university": "UNI M\u00fcnster",
       "num_heats": 4,
       "mean_best_wave": 2.3925,
@@ -163,7 +203,7 @@
       "min_best_wave": 0.67
     },
     {
-      "rank": 21,
+      "rank": 26,
       "university": "RPTU Kaiserslauter-Lautern",
       "num_heats": 1,
       "mean_best_wave": 2.33,
@@ -171,31 +211,15 @@
       "min_best_wave": 2.33
     },
     {
-      "rank": 22,
-      "university": "DSHS K\u00f6ln",
-      "num_heats": 3,
-      "mean_best_wave": 2.3233,
-      "max_best_wave": 3.5,
-      "min_best_wave": 1.3
+      "rank": 27,
+      "university": "UNI Regensburg",
+      "num_heats": 2,
+      "mean_best_wave": 2.315,
+      "max_best_wave": 2.6,
+      "min_best_wave": 2.03
     },
     {
-      "rank": 23,
-      "university": "UNI Hamburg",
-      "num_heats": 5,
-      "mean_best_wave": 2.228,
-      "max_best_wave": 5.0,
-      "min_best_wave": 0.97
-    },
-    {
-      "rank": 24,
-      "university": "UNI Stuttgart",
-      "num_heats": 6,
-      "mean_best_wave": 2.2233,
-      "max_best_wave": 4.77,
-      "min_best_wave": 0.5
-    },
-    {
-      "rank": 25,
+      "rank": 28,
       "university": "UNI Freiburg",
       "num_heats": 9,
       "mean_best_wave": 2.2044,
@@ -203,7 +227,31 @@
       "min_best_wave": 1.0
     },
     {
-      "rank": 26,
+      "rank": 29,
+      "university": "DSHS K\u00f6ln",
+      "num_heats": 6,
+      "mean_best_wave": 2.1717,
+      "max_best_wave": 3.5,
+      "min_best_wave": 1.3
+    },
+    {
+      "rank": 30,
+      "university": "UNI Stuttgart",
+      "num_heats": 7,
+      "mean_best_wave": 2.12,
+      "max_best_wave": 4.77,
+      "min_best_wave": 0.5
+    },
+    {
+      "rank": 31,
+      "university": "UNI Konstanz",
+      "num_heats": 1,
+      "mean_best_wave": 2.1,
+      "max_best_wave": 2.1,
+      "min_best_wave": 2.1
+    },
+    {
+      "rank": 32,
       "university": "TH K\u00f6ln",
       "num_heats": 1,
       "mean_best_wave": 2.0,
@@ -211,7 +259,15 @@
       "min_best_wave": 2.0
     },
     {
-      "rank": 27,
+      "rank": 33,
+      "university": "UNI Hamburg",
+      "num_heats": 9,
+      "mean_best_wave": 1.9422,
+      "max_best_wave": 5.0,
+      "min_best_wave": 0.97
+    },
+    {
+      "rank": 34,
       "university": "RPTU Kaiserslautern-Landau",
       "num_heats": 2,
       "mean_best_wave": 1.835,
@@ -219,15 +275,23 @@
       "min_best_wave": 0.67
     },
     {
-      "rank": 28,
+      "rank": 35,
+      "university": "UNI W\u00fcrzburg",
+      "num_heats": 4,
+      "mean_best_wave": 1.8325,
+      "max_best_wave": 3.83,
+      "min_best_wave": 0.37
+    },
+    {
+      "rank": 36,
       "university": "UNI Potsdam",
-      "num_heats": 7,
-      "mean_best_wave": 1.5329,
-      "max_best_wave": 2.5,
+      "num_heats": 8,
+      "mean_best_wave": 1.795,
+      "max_best_wave": 3.63,
       "min_best_wave": 0.63
     },
     {
-      "rank": 29,
+      "rank": 37,
       "university": "HU Berlin",
       "num_heats": 1,
       "mean_best_wave": 1.53,
@@ -235,15 +299,7 @@
       "min_best_wave": 1.53
     },
     {
-      "rank": 30,
-      "university": "Europa Universit\u00e4t Flensburg",
-      "num_heats": 1,
-      "mean_best_wave": 1.33,
-      "max_best_wave": 1.33,
-      "min_best_wave": 1.33
-    },
-    {
-      "rank": 31,
+      "rank": 38,
       "university": "KIT Karlsruhe",
       "num_heats": 2,
       "mean_best_wave": 1.085,
@@ -251,7 +307,7 @@
       "min_best_wave": 1.0
     },
     {
-      "rank": 32,
+      "rank": 39,
       "university": "Fern Uni Hagen",
       "num_heats": 1,
       "mean_best_wave": 1.0,
@@ -259,15 +315,15 @@
       "min_best_wave": 1.0
     },
     {
-      "rank": 33,
-      "university": "UNI W\u00fcrzburg",
-      "num_heats": 2,
-      "mean_best_wave": 0.75,
-      "max_best_wave": 1.13,
-      "min_best_wave": 0.37
+      "rank": 40,
+      "university": "Die Unternehmerische Hochschule",
+      "num_heats": 1,
+      "mean_best_wave": 0.93,
+      "max_best_wave": 0.93,
+      "min_best_wave": 0.93
     },
     {
-      "rank": 34,
+      "rank": 41,
       "university": "UNI Bochum",
       "num_heats": 1,
       "mean_best_wave": 0.5,
@@ -918,32 +974,41 @@
       "heat": "Round 1 H16",
       "surfers": [
         {
-          "athlete": "Yannis Lymann",
-          "university": "HS Offenburg",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Christian Lust",
-          "university": "UNI Hamburg",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
           "athlete": "Tim Weishaupt",
           "university": "Europa Universit\u00e4t Flensburg",
-          "best_wave": null,
-          "top_waves": [],
+          "best_wave": 4.33,
+          "top_waves": [
+            4.33,
+            2.8
+          ],
           "place": 1
         },
         {
           "athlete": "Leonard Wiesner",
           "university": "RWTH Aachen",
+          "best_wave": 2.13,
+          "top_waves": [
+            2.13,
+            1.67
+          ],
+          "place": 2
+        },
+        {
+          "athlete": "Christian Lust",
+          "university": "UNI Hamburg",
+          "best_wave": 0.97,
+          "top_waves": [
+            0.97,
+            0.27
+          ],
+          "place": 3
+        },
+        {
+          "athlete": "Yannis Lymann",
+          "university": "HS Offenburg",
           "best_wave": null,
           "top_waves": [],
-          "place": 1
+          "place": 4
         }
       ]
     },
@@ -952,32 +1017,38 @@
       "heat": "Round 1 H17",
       "surfers": [
         {
-          "athlete": "Ole Schneider",
-          "university": "UNI Hamburg",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Mathis Holland",
-          "university": "UNI Hamburg",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
           "athlete": "Finn Kroll",
           "university": "UNI Kiel",
-          "best_wave": null,
-          "top_waves": [],
+          "best_wave": 2.5,
+          "top_waves": [
+            2.5
+          ],
           "place": 1
         },
         {
           "athlete": "Alexander Mai",
           "university": "UNI Stuttgart",
+          "best_wave": 1.5,
+          "top_waves": [
+            1.5
+          ],
+          "place": 2
+        },
+        {
+          "athlete": "Mathis Holland",
+          "university": "UNI Hamburg",
+          "best_wave": 1.07,
+          "top_waves": [
+            1.07
+          ],
+          "place": 3
+        },
+        {
+          "athlete": "Ole Schneider",
+          "university": "UNI Hamburg",
           "best_wave": null,
           "top_waves": [],
-          "place": 1
+          "place": 4
         }
       ]
     },
@@ -986,32 +1057,44 @@
       "heat": "Round 1 H18",
       "surfers": [
         {
-          "athlete": "Manuel Tristan Preiss",
-          "university": "UNI Konstanz",
-          "best_wave": null,
-          "top_waves": [],
+          "athlete": "Leonard Derle",
+          "university": "Uni Wien",
+          "best_wave": 4.93,
+          "top_waves": [
+            4.93,
+            4.5
+          ],
           "place": 1
         },
         {
           "athlete": "Philipp Neher",
           "university": "Uni Innsbruck",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
+          "best_wave": 3.77,
+          "top_waves": [
+            3.77,
+            2.73
+          ],
+          "place": 2
         },
         {
           "athlete": "Max von Holten",
           "university": "UNI Kiel",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
+          "best_wave": 3.97,
+          "top_waves": [
+            3.97,
+            1.33
+          ],
+          "place": 3
         },
         {
-          "athlete": "Leonard Derle",
-          "university": "Uni Wien",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
+          "athlete": "Manuel Tristan Preiss",
+          "university": "UNI Konstanz",
+          "best_wave": 2.1,
+          "top_waves": [
+            2.1,
+            2.0
+          ],
+          "place": 4
         }
       ]
     },
@@ -1022,30 +1105,42 @@
         {
           "athlete": "Elias Volkmer",
           "university": "TU M\u00fcnchen",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Niklas Capelle",
-          "university": "UNI Kiel",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Tim Flothmann",
-          "university": "DSHS K\u00f6ln",
-          "best_wave": null,
-          "top_waves": [],
+          "best_wave": 4.23,
+          "top_waves": [
+            4.23,
+            1.67
+          ],
           "place": 1
         },
         {
           "athlete": "Aaron Gentzsch",
           "university": "UNI W\u00fcrzburg",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
+          "best_wave": 3.83,
+          "top_waves": [
+            3.83,
+            1.67
+          ],
+          "place": 2
+        },
+        {
+          "athlete": "Niklas Capelle",
+          "university": "UNI Kiel",
+          "best_wave": 2.83,
+          "top_waves": [
+            2.83,
+            1.6
+          ],
+          "place": 3
+        },
+        {
+          "athlete": "Tim Flothmann",
+          "university": "DSHS K\u00f6ln",
+          "best_wave": 2.0,
+          "top_waves": [
+            2.0,
+            1.17
+          ],
+          "place": 4
         }
       ]
     },
@@ -1054,32 +1149,44 @@
       "heat": "Round 1 H20",
       "surfers": [
         {
-          "athlete": "Paul Lorenz",
-          "university": "LMU M\u00fcnchen",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Lisander Zeiske",
-          "university": "UNI Kiel",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
           "athlete": "Benedikt Bee",
           "university": "DSHS K\u00f6ln",
-          "best_wave": null,
-          "top_waves": [],
+          "best_wave": 2.23,
+          "top_waves": [
+            2.23,
+            1.77
+          ],
           "place": 1
+        },
+        {
+          "athlete": "Paul Lorenz",
+          "university": "LMU M\u00fcnchen",
+          "best_wave": 2.5,
+          "top_waves": [
+            2.5,
+            1.23
+          ],
+          "place": 2
         },
         {
           "athlete": "Paul Kern",
           "university": "UNI W\u00fcrzburg",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
+          "best_wave": 2.0,
+          "top_waves": [
+            2.0,
+            1.47
+          ],
+          "place": 3
+        },
+        {
+          "athlete": "Lisander Zeiske",
+          "university": "UNI Kiel",
+          "best_wave": 2.0,
+          "top_waves": [
+            2.0,
+            0.93
+          ],
+          "place": 4
         }
       ]
     },
@@ -1088,8 +1195,124 @@
       "heat": "Round 1 H21",
       "surfers": [
         {
+          "athlete": "Jakob Monerjan",
+          "university": "DSHS K\u00f6ln",
+          "best_wave": 1.83,
+          "top_waves": [
+            1.83
+          ],
+          "place": 1
+        },
+        {
+          "athlete": "Manuel M\u00e4rkl",
+          "university": "TU M\u00fcnchen",
+          "best_wave": 1.33,
+          "top_waves": [
+            1.33,
+            0.5
+          ],
+          "place": 2
+        },
+        {
           "athlete": "Linus R\u00f6mer",
           "university": "Die Unternehmerische Hochschule",
+          "best_wave": 0.93,
+          "top_waves": [
+            0.93
+          ],
+          "place": 3
+        },
+        {
+          "athlete": "William Christoph Behrends",
+          "university": "Uni Frankfurt",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 4
+        }
+      ]
+    },
+    {
+      "division": "Open Men",
+      "heat": "Round 1 H22",
+      "surfers": [
+        {
+          "athlete": "Kai Wilke",
+          "university": "UNI Potsdam",
+          "best_wave": 3.63,
+          "top_waves": [
+            3.63,
+            2.4
+          ],
+          "place": 1
+        },
+        {
+          "athlete": "Yul Fischer",
+          "university": "UNI Regensburg",
+          "best_wave": 2.03,
+          "top_waves": [
+            2.03,
+            1.47
+          ],
+          "place": 2
+        },
+        {
+          "athlete": "Marc Dietrich",
+          "university": "UNI T\u00fcbingen",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 3
+        },
+        {
+          "athlete": "Leon Eckert",
+          "university": "UNI Potsdam",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 3
+        }
+      ]
+    },
+    {
+      "division": "Open Men",
+      "heat": "Round 1 H23",
+      "surfers": [
+        {
+          "athlete": "Christian Orlowski",
+          "university": "UNI D\u00fcsseldorf",
+          "best_wave": 3.6,
+          "top_waves": [
+            3.6,
+            3.0
+          ],
+          "place": 1
+        },
+        {
+          "athlete": "David Rose",
+          "university": "FH Weihenstephen",
+          "best_wave": 4.5,
+          "top_waves": [
+            4.5
+          ],
+          "place": 2
+        },
+        {
+          "athlete": "Leonard Wei\u00df",
+          "university": "UNI T\u00fcbingen",
+          "best_wave": 2.4,
+          "top_waves": [
+            2.4,
+            1.0
+          ],
+          "place": 3
+        }
+      ]
+    },
+    {
+      "division": "Open Men",
+      "heat": "Round 2 H2",
+      "surfers": [
+        {
+          "athlete": "Benedikt Bee",
+          "university": "DSHS K\u00f6ln",
           "best_wave": null,
           "top_waves": [],
           "place": 1
@@ -1102,89 +1325,15 @@
           "place": 1
         },
         {
-          "athlete": "William Christoph Behrends",
-          "university": "Uni Frankfurt",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Manuel M\u00e4rkl",
-          "university": "TU M\u00fcnchen",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        }
-      ]
-    },
-    {
-      "division": "Open Men",
-      "heat": "Round 1 H22",
-      "surfers": [
-        {
-          "athlete": "Marc Dietrich",
-          "university": "UNI T\u00fcbingen",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Kai Wilke",
-          "university": "UNI Potsdam",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Leon Eckert",
-          "university": "UNI Potsdam",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Yul Fischer",
-          "university": "UNI Regensburg",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        }
-      ]
-    },
-    {
-      "division": "Open Men",
-      "heat": "Round 1 H23",
-      "surfers": [
-        {
-          "athlete": "Leonard Wei\u00df",
-          "university": "UNI T\u00fcbingen",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Christian Orlowski",
-          "university": "UNI D\u00fcsseldorf",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "David Rose",
-          "university": "FH Weihenstephen",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        }
-      ]
-    },
-    {
-      "division": "Open Men",
-      "heat": "Round 2 H2",
-      "surfers": [
-        {
           "athlete": "Joshua K\u00f6lln",
           "university": "UNI Kiel",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Philipp Neher",
+          "university": "Uni Innsbruck",
           "best_wave": null,
           "top_waves": [],
           "place": 1
@@ -1257,6 +1406,13 @@
       "heat": "Round 2 H2",
       "surfers": [
         {
+          "athlete": "Finn Kroll",
+          "university": "UNI Kiel",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
           "athlete": "Ben Edenharder",
           "university": "Uni Innsbruck",
           "best_wave": null,
@@ -1303,6 +1459,13 @@
           "best_wave": null,
           "top_waves": [],
           "place": 1
+        },
+        {
+          "athlete": "David Rose",
+          "university": "FH Weihenstephen",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
         }
       ]
     },
@@ -1310,6 +1473,20 @@
       "division": "Open Men",
       "heat": "Round 2 H2",
       "surfers": [
+        {
+          "athlete": "Elias Volkmer",
+          "university": "TU M\u00fcnchen",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Yul Fischer",
+          "university": "UNI Regensburg",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
         {
           "athlete": "Anton Richter",
           "university": "UNI Kiel",
@@ -1338,6 +1515,20 @@
           "place": 1
         },
         {
+          "athlete": "Paul Lorenz",
+          "university": "LMU M\u00fcnchen",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Kai Wilke",
+          "university": "UNI Potsdam",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
           "athlete": "Lian Matzke",
           "university": "UNI Potsdam",
           "best_wave": null,
@@ -1358,6 +1549,20 @@
           "place": 1
         },
         {
+          "athlete": "Aaron Gentzsch",
+          "university": "UNI W\u00fcrzburg",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Christian Orlowski",
+          "university": "UNI D\u00fcsseldorf",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
           "athlete": "Niklas Kroll",
           "university": "TH K\u00f6ln",
           "best_wave": null,
@@ -1373,6 +1578,13 @@
         {
           "athlete": "Julian Loos",
           "university": "UNI Marburg",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Leonard Derle",
+          "university": "Uni Wien",
           "best_wave": null,
           "top_waves": [],
           "place": 1
@@ -1412,6 +1624,13 @@
           "place": 1
         },
         {
+          "athlete": "Alexander Mai",
+          "university": "UNI Stuttgart",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
           "athlete": "Jannik Kuhle",
           "university": "UNI M\u00fcnster",
           "best_wave": null,
@@ -1427,6 +1646,13 @@
         {
           "athlete": "Tobin Wachowiak",
           "university": "RWTH Aachen",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Tim Weishaupt",
+          "university": "Europa Universit\u00e4t Flensburg",
           "best_wave": null,
           "top_waves": [],
           "place": 1
@@ -1460,6 +1686,20 @@
         },
         {
           "athlete": "Johannes Krammer",
+          "university": "TU M\u00fcnchen",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Leonard Wiesner",
+          "university": "RWTH Aachen",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Manuel M\u00e4rkl",
           "university": "TU M\u00fcnchen",
           "best_wave": null,
           "top_waves": [],
@@ -1845,8 +2085,159 @@
       "heat": "Quarterfinal H2",
       "surfers": [
         {
+          "athlete": "Annika Grundmann",
+          "university": "UNI Kiel",
+          "best_wave": 4.0,
+          "top_waves": [
+            4.0
+          ],
+          "place": 1
+        },
+        {
+          "athlete": "Nele Hagenlocher",
+          "university": "UNI Hamburg",
+          "best_wave": 1.97,
+          "top_waves": [
+            1.97
+          ],
+          "place": 2
+        },
+        {
           "athlete": "Lucy Schnabel",
           "university": "UNI Stuttgart",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 3
+        }
+      ]
+    },
+    {
+      "division": "Open Women",
+      "heat": "Quarterfinal H2",
+      "surfers": [
+        {
+          "athlete": "Annika Dues",
+          "university": "RWTH Aachen",
+          "best_wave": 3.5,
+          "top_waves": [
+            3.5
+          ],
+          "place": 1
+        },
+        {
+          "athlete": "Anna Kapps",
+          "university": "Media University of applied Science",
+          "best_wave": 2.67,
+          "top_waves": [
+            2.67
+          ],
+          "place": 2
+        },
+        {
+          "athlete": "Josefine Zickenrott",
+          "university": "UNI Marburg",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 3
+        },
+        {
+          "athlete": "Jolina Heine",
+          "university": "UNI Kiel",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 3
+        }
+      ]
+    },
+    {
+      "division": "Open Women",
+      "heat": "Quarterfinal H2",
+      "surfers": [
+        {
+          "athlete": "Lina Erpenstein",
+          "university": "UNI Kiel",
+          "best_wave": 4.53,
+          "top_waves": [
+            4.53,
+            4.0
+          ],
+          "place": 1
+        },
+        {
+          "athlete": "Mattea Ringeisen",
+          "university": "Uni Innsbruck",
+          "best_wave": 3.37,
+          "top_waves": [
+            3.37,
+            0.5
+          ],
+          "place": 2
+        },
+        {
+          "athlete": "Jolie Bast",
+          "university": "UNI Hamburg",
+          "best_wave": 2.33,
+          "top_waves": [
+            2.33,
+            1.5
+          ],
+          "place": 3
+        },
+        {
+          "athlete": "Pia Lorbeer",
+          "university": "UNI Potsdam",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 4
+        }
+      ]
+    },
+    {
+      "division": "Open Women",
+      "heat": "Quarterfinal H2",
+      "surfers": [
+        {
+          "athlete": "Joana Attenberger",
+          "university": "TH Deggendorf",
+          "best_wave": 3.17,
+          "top_waves": [
+            3.17,
+            2.83
+          ],
+          "place": 1
+        },
+        {
+          "athlete": "Sina Philipp",
+          "university": "Uni Innsbruck",
+          "best_wave": 5.17,
+          "top_waves": [
+            5.17
+          ],
+          "place": 2
+        },
+        {
+          "athlete": "Melody M\u00e4rz",
+          "university": "TU M\u00fcnchen",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 3
+        }
+      ]
+    },
+    {
+      "division": "Open Women",
+      "heat": "Semifinal H3",
+      "surfers": [
+        {
+          "athlete": "Lucy Schnabel",
+          "university": "UNI Stuttgart",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Annika Dues",
+          "university": "RWTH Aachen",
           "best_wave": null,
           "top_waves": [],
           "place": 1
@@ -1859,93 +2250,18 @@
           "place": 1
         },
         {
-          "athlete": "Malina Richter",
-          "university": "IU Internationale Hochschule",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        }
-      ]
-    },
-    {
-      "division": "Open Women",
-      "heat": "Quarterfinal H2",
-      "surfers": [
-        {
-          "athlete": "Annika Dues",
-          "university": "RWTH Aachen",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
           "athlete": "Anna Kapps",
           "university": "Media University of applied Science",
           "best_wave": null,
           "top_waves": [],
           "place": 1
-        },
-        {
-          "athlete": "Josefine Zickenrott",
-          "university": "UNI Marburg",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Jolina Heine",
-          "university": "UNI Kiel",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
         }
       ]
     },
     {
       "division": "Open Women",
-      "heat": "Quarterfinal H2",
+      "heat": "Semifinal H3",
       "surfers": [
-        {
-          "athlete": "Mattea Ringeisen",
-          "university": "Uni Innsbruck",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Jolie Bast",
-          "university": "UNI Hamburg",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Pia Lorbeer",
-          "university": "UNI Potsdam",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
-        {
-          "athlete": "Lina Erpenstein",
-          "university": "UNI Kiel",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        }
-      ]
-    },
-    {
-      "division": "Open Women",
-      "heat": "Quarterfinal H2",
-      "surfers": [
-        {
-          "athlete": "Sina Philipp",
-          "university": "Uni Innsbruck",
-          "best_wave": null,
-          "top_waves": [],
-          "place": 1
-        },
         {
           "athlete": "Joana Attenberger",
           "university": "TH Deggendorf",
@@ -1954,8 +2270,22 @@
           "place": 1
         },
         {
-          "athlete": "Melody M\u00e4rz",
-          "university": "TU M\u00fcnchen",
+          "athlete": "Mattea Ringeisen",
+          "university": "Uni Innsbruck",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Sina Philipp",
+          "university": "Uni Innsbruck",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Jolie Bast",
+          "university": "UNI Hamburg",
           "best_wave": null,
           "top_waves": [],
           "place": 1
