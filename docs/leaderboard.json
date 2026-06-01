@@ -1,6 +1,6 @@
 {
   "event_name": "ADH-Open Wellenreiten 2026",
-  "updated_at": "2026-06-01 02:05 UTC",
+  "updated_at": "2026-06-01 07:22 UTC",
   "leaderboard": [],
   "heats": [
     {
@@ -1208,6 +1208,26 @@
       ]
     },
     {
+      "division": "Longboard Men",
+      "heat": "Semifinal H2",
+      "surfers": [
+        {
+          "athlete": "Luca Dransmann",
+          "university": "KIT Karlsruhe",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "David Flesch",
+          "university": "Uni Oldenburg",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        }
+      ]
+    },
+    {
       "division": "Longboard Women",
       "heat": "Quarterfinal H1",
       "surfers": [
@@ -1296,6 +1316,26 @@
         {
           "athlete": "Lilli Margenberg",
           "university": "UNI Kiel",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "division": "Longboard Women",
+      "heat": "Semifinal H2",
+      "surfers": [
+        {
+          "athlete": "Julia Lampe",
+          "university": "UNI Hannover",
+          "best_wave": null,
+          "top_waves": [],
+          "place": 1
+        },
+        {
+          "athlete": "Jolie Bast",
+          "university": "UNI Hamburg",
           "best_wave": null,
           "top_waves": [],
           "place": 1
